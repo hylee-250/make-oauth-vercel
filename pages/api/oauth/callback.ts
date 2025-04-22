@@ -5,7 +5,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const state = req.query.state as string;
 
   // FastAPI 서버에 전달
-  await fetch("https://your-fastapi-backend.com/oauth/exchange", {
+  await fetch("https://922f-14-52-23-180.ngrok-free.app", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ code, state }),
